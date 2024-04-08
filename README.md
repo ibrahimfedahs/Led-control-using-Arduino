@@ -1,4 +1,7 @@
-# Led-control-using-Arduino
+### NAME: ADHITHIYAN.K
+### Reg No : 212222230006
+
+## Led-control-using-Arduino
 
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
@@ -59,8 +62,43 @@ Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
 
+<img width="564" alt="309967604-4c38ba90-7e5c-4e1f-a989-248ad0bdfb93" src="https://github.com/anishkumar-Embedded/Led-control-using-Arduino/assets/121029258/9cb7f365-503a-4f1c-bfb2-36801caa61a9">
+
 ## PROGRAM
+```
+const int buttonpin=2;
+const int ledpin=13;
+
+int buttonstate=0;
+
+void setup() {
+  pinMode(ledpin,OUTPUT);
+  pinMode(buttonpin,INPUT);
+
+}
+
+void loop() {
+  buttonstate=digitalRead(buttonpin);
+  if(buttonstate==HIGH)
+  {
+    digitalWrite(ledpin,HIGH);
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);
+  }
+
+}
+```
 
 ## OUTPUT
 
+## LED OFF:
+<img width="960" alt="309967948-3e8186e6-86a8-4bbc-b86e-259ce207a3cd" src="https://github.com/anishkumar-Embedded/Led-control-using-Arduino/assets/121029258/a1064211-2ae1-408c-8162-3756404b8226">
+
+## LED ON:
+<img width="960" alt="309968024-b9a86fae-ef3c-4a8b-8c3f-4408b60e03af" src="https://github.com/anishkumar-Embedded/Led-control-using-Arduino/assets/121029258/5c3c99e5-822e-4cb4-b31c-87665916fabc">
+
 ## RESULT
+
+Thus to design and implement a system for LED control using an Arduino microcontroller and a push button is successfully executed
