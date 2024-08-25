@@ -1,7 +1,7 @@
 ## NAME: IBRAHIM FEDAH S
 ## Reg No : 212223240056
-## Led-control-using-Arduino
-
+# Led-control-using-Arduino
+## DATE : 25/08/24
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
 
@@ -59,46 +59,37 @@ Security System Indicator </br>
 Emergency Signaling System </br>
 Weighing Machines </br>
 
-## CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAM :
+![image](https://github.com/user-attachments/assets/46dc1810-9205-45a6-9acc-da6818635b33)
 
-<img width="564" alt="309967604-4c38ba90-7e5c-4e1f-a989-248ad0bdfb93" src="https://github.com/AdhithiyanK/Led-control-using-Arduino/assets/121029258/396fa4ab-414e-4c30-af20-5f2e93673ff4">
 
-## PROGRAM
-```
-const int buttonpin=2;
-const int ledpin=13;
+## PROGRAM:
+NAME : AMRUTHA SA
+REG NO : 212222110004
 
-int buttonstate=0;
-
+const int buttonPin = 3;     
+const int ledPin =  13;     
+int buttonState = 0;         
 void setup() {
-  pinMode(ledpin,OUTPUT);
-  pinMode(buttonpin,INPUT);
-
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT);
 }
-
-void loop() {
-  buttonstate=digitalRead(buttonpin);
-  if(buttonstate==HIGH)
-  {
-    digitalWrite(ledpin,HIGH);
-  }
-  else
-  {
-    digitalWrite(ledpin,LOW);
-  }
-
+void loop()
+{
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH) 
+{
+  digitalWrite(ledPin, HIGH);
+} 
+  else 
+{
+  digitalWrite(ledPin, LOW);
 }
-```
+}
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/00868949-3f58-4b53-89b6-8bf8c60a146f)
 
-## LED OFF:
 
-<img width="960" alt="309967948-3e8186e6-86a8-4bbc-b86e-259ce207a3cd" src="https://github.com/AdhithiyanK/Led-control-using-Arduino/assets/121029258/79c9e953-553d-4815-94cd-16429f3afe50">
-
-## LED ON:
-
-<img width="960" alt="309968024-b9a86fae-ef3c-4a8b-8c3f-4408b60e03af" src="https://github.com/AdhithiyanK/Led-control-using-Arduino/assets/121029258/387410a9-a9cf-44db-8938-fa9d41c1dd87">
-
-## RESULT
-Thus to design and implement a system for LED control using an Arduino microcontroller and a push button is successfully executed
+## RESULT:
+Thus to design and implement a system for LED control using an Arduino microcontroller and a push button is executed.
