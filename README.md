@@ -1,7 +1,8 @@
 ## NAME: IBRAHIM FEDAH S
 ## Reg No : 212223240056
-# Led-control-using-Arduino
 ## DATE : 25/08/24
+# Led-control-using-Arduino
+
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
 
@@ -59,37 +60,34 @@ Security System Indicator </br>
 Emergency Signaling System </br>
 Weighing Machines </br>
 
-## CIRCUIT DIAGRAM :
-![image](https://github.com/user-attachments/assets/46dc1810-9205-45a6-9acc-da6818635b33)
+## CIRCUIT DIAGRAM
+![Screenshot 2024-08-21 094101](https://github.com/user-attachments/assets/cbb63dae-35e0-4552-938e-077379f25bab)
 
+## PROGRAM
+```
+const int ledPin = 12;   
+const int buttonPin = 13;
 
-## PROGRAM:
-NAME : AMRUTHA SA
-REG NO : 212222110004
-
-const int buttonPin = 3;     
-const int ledPin =  13;     
-int buttonState = 0;         
 void setup() {
-  pinMode(ledPin, OUTPUT);
-  pinMode(buttonPin, INPUT);
-}
-void loop()
-{
-  buttonState = digitalRead(buttonPin);
-  if (buttonState == HIGH) 
-{
-  digitalWrite(ledPin, HIGH);
-} 
-  else 
-{
-  digitalWrite(ledPin, LOW);
-}
+  pinMode(ledPin, OUTPUT);    
+  pinMode(buttonPin, INPUT_PULLUP); 
 }
 
+void loop() {
+  int buttonState = digitalRead(buttonPin); 
+  
+  if (buttonState == LOW) { 
+    digitalWrite(ledPin, LOW);
+  } else { 
+    digitalWrite(ledPin, HIGH);
+  }
+}
+```
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/00868949-3f58-4b53-89b6-8bf8c60a146f)
+![Screenshot 2024-08-21 093609](https://github.com/user-attachments/assets/54f9960f-6620-423f-a802-24648dc65f25)
+![Screenshot 2024-08-21 093553](https://github.com/user-attachments/assets/9a06fd87-b84c-435a-a623-388a1febf9a5)
 
 
-## RESULT:
-Thus to design and implement a system for LED control using an Arduino microcontroller and a push button is executed.
+## RESULT
+Thus the program and circuit to design and implement a system for LED control using an Arduino microcontroller and a push button is successfully completed.
+
