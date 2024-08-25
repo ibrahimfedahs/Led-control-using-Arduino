@@ -1,5 +1,5 @@
-## NAME: ADHITHIYAN.K
-## Reg No : 2122222230006
+## NAME: IBRAHIM FEDAH S
+## Reg No : 212223240056
 ## Led-control-using-Arduino
 
 ## AIM
