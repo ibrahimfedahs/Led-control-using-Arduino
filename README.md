@@ -28,7 +28,6 @@ Step 9 Press the push button and observe the LED's behavior </br>
 
 ## THEORY
 ### Introduction 
-
 LED pushbutton code is a program written for the Arduino UNO microcontroller that controls an LED using a pushbutton. When the pushbutton is pressed, the code reads the state of the button and turns the LED on or off accordingly.
 
 ### Arduino 
